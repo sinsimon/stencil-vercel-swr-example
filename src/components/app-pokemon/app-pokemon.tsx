@@ -1,4 +1,4 @@
-import { Build, Component, h, State, Watch } from '@stencil/core';
+import { Component, h, State } from '@stencil/core';
 
 @Component({
   tag: 'app-pokemon',
