@@ -7,7 +7,7 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { MatchResults } from "@stencil/router";
 export namespace Components {
-    interface AppHome {
+    interface AppPokemon {
     }
     interface AppProfile {
         "match": MatchResults;
@@ -16,11 +16,11 @@ export namespace Components {
     }
 }
 declare global {
-    interface HTMLAppHomeElement extends Components.AppHome, HTMLStencilElement {
+    interface HTMLAppPokemonElement extends Components.AppPokemon, HTMLStencilElement {
     }
-    var HTMLAppHomeElement: {
-        prototype: HTMLAppHomeElement;
-        new (): HTMLAppHomeElement;
+    var HTMLAppPokemonElement: {
+        prototype: HTMLAppPokemonElement;
+        new (): HTMLAppPokemonElement;
     };
     interface HTMLAppProfileElement extends Components.AppProfile, HTMLStencilElement {
     }
@@ -35,13 +35,13 @@ declare global {
         new (): HTMLAppRootElement;
     };
     interface HTMLElementTagNameMap {
-        "app-home": HTMLAppHomeElement;
+        "app-pokemon": HTMLAppPokemonElement;
         "app-profile": HTMLAppProfileElement;
         "app-root": HTMLAppRootElement;
     }
 }
 declare namespace LocalJSX {
-    interface AppHome {
+    interface AppPokemon {
     }
     interface AppProfile {
         "match"?: MatchResults;
@@ -49,7 +49,7 @@ declare namespace LocalJSX {
     interface AppRoot {
     }
     interface IntrinsicElements {
-        "app-home": AppHome;
+        "app-pokemon": AppPokemon;
         "app-profile": AppProfile;
         "app-root": AppRoot;
     }
@@ -58,7 +58,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "app-home": LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;
+            "app-pokemon": LocalJSX.AppPokemon & JSXBase.HTMLAttributes<HTMLAppPokemonElement>;
             "app-profile": LocalJSX.AppProfile & JSXBase.HTMLAttributes<HTMLAppProfileElement>;
             "app-root": LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
         }
